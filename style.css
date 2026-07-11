@@ -1,0 +1,409 @@
+/* ===========================================================
+   FARMORA — Design Tokens & Custom Styles
+   Palette:
+     --forest   #1E3A2B  (primary dark green)
+     --cream    #F6F1E4  (background / light text on dark)
+     --leaf     #8FBF77  (accent green, CTA)
+     --husk     #8B5A2B  (coconut-brown accent)
+     --charcoal #241E1A  (near-black, for charcoal product mood)
+   Type:
+     Display: 'Fraunces' (serif, organic, characterful)
+     Body:    'Work Sans'
+   =========================================================== */
+
+:root {
+  --forest: #1e3a2b;
+  --cream: #ffffff;
+  --leaf: #8fbf77;
+  --husk: #8b5a2b;
+  --charcoal: #241e1a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-display {
+  font-family: "Poppins", sans-serif;
+}
+.font-body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Tailwind custom color utility fallback (no build step, so define directly) */
+.bg-forest {
+  background-color: var(--forest);
+}
+.bg-cream {
+  background-color: var(--cream);
+}
+.bg-leaf {
+  background-color: var(--leaf);
+}
+.bg-husk {
+  background-color: var(--husk);
+}
+.bg-husk\/10 {
+  background-color: rgb(139 90 43 / 0.1);
+}
+.bg-charcoal {
+  background-color: var(--charcoal);
+}
+.text-forest {
+  color: var(--forest);
+}
+.text-cream {
+  color: var(--cream);
+}
+.text-leaf {
+  color: var(--leaf);
+}
+.text-husk {
+  color: var(--husk);
+}
+.text-charcoal {
+  color: var(--charcoal);
+}
+.border-husk\/25 {
+  border-color: rgb(139 90 43 / 0.25);
+}
+.hover\:bg-forest:hover {
+  background-color: var(--forest);
+}
+.hover\:bg-husk:hover {
+  background-color: var(--husk);
+}
+.hover\:bg-cream:hover {
+  background-color: var(--cream);
+}
+.hover\:text-cream:hover {
+  color: var(--cream);
+}
+.hover\:text-leaf:hover {
+  color: var(--leaf);
+}
+
+/* ---------- Header ---------- */
+#header {
+  background-color: transparent;
+}
+#header.scrolled {
+  background-color: var(--cream);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+#header .header-text {
+  color: var(--cream);
+}
+#header.scrolled .header-text {
+  color: var(--forest);
+}
+
+.nav-link {
+  position: relative;
+  transition: opacity 0.2s ease;
+}
+.nav-link:hover {
+  opacity: 0.7;
+}
+.nav-link-mobile {
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(246, 241, 228, 0.12);
+}
+
+/* ---------- Hero ---------- */
+.hero-gradient {
+  background: linear-gradient(180deg, rgba(30, 58, 43, 0.15) 0%, rgba(20, 26, 20, 0.55) 55%, rgba(15, 20, 15, 0.9) 100%);
+}
+
+.fade-up {
+  animation: fadeUp 0.8s ease both;
+}
+.fade-up:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.fade-up:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.fade-up:nth-child(3) {
+  animation-delay: 0.25s;
+}
+.fade-up:nth-child(4) {
+  animation-delay: 0.35s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ---------- Subtle hero parallax ---------- */
+.hero-parallax {
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+.img-parallax {
+  will-change: transform;
+}
+
+/* ---------- Scroll-reveal (IntersectionObserver driven) ---------- */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.reveal-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-up {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .hero-parallax,
+  .img-parallax {
+    transform: none !important;
+  }
+  .scroll-cue span {
+    animation: none;
+  }
+}
+
+/* ---------- Journey line draw-in ---------- */
+.journey-line {
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition: transform 1s ease 0.2s;
+}
+.journey-line.is-visible {
+  transform: scaleX(1);
+}
+
+/* ---------- Header logo micro-interaction ---------- */
+header a.flex img {
+  transition: transform 0.3s ease;
+}
+header a.flex:hover img {
+  transform: rotate(-8deg) scale(1.05);
+}
+
+/* ---------- Eyebrow label ---------- */
+.eyebrow {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--husk);
+}
+
+/* ---------- Supply journey (signature element) ---------- */
+.journey-dot {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  border-radius: 999px;
+  background-color: var(--cream);
+  border: 1.5px solid rgb(139 90 43 / 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  color: var(--husk);
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- Product cards ---------- */
+.product-card {
+  background-color: var(--cream);
+  border-radius: 20px;
+  padding: 1.75rem;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* ---------- Why-us icon ---------- */
+.why-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 999px;
+  background-color: rgb(30 58 43 / 0.08);
+  color: var(--forest);
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Social icons ---------- */
+.social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background-color: rgba(246, 241, 228, 0.1);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+.social-icon:hover {
+  background-color: var(--leaf);
+  color: var(--forest);
+}
+
+/* ---------- Focus states (accessibility) ---------- */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--leaf);
+  outline-offset: 3px;
+}
+
+/* ---------- Misi cards (interactive) ---------- */
+.misi-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(36, 30, 26, 0.06);
+  box-shadow:
+    0 2px 4px rgba(36, 30, 26, 0.06),
+    0 8px 20px rgba(36, 30, 26, 0.1),
+    0 20px 40px rgba(30, 58, 43, 0.08);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease;
+}
+.misi-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 4px 8px rgba(36, 30, 26, 0.08),
+    0 16px 32px rgba(36, 30, 26, 0.14),
+    0 32px 64px rgba(30, 58, 43, 0.16);
+  border-color: var(--leaf);
+  background-color: #fbfbf9;
+}
+
+/* ---------- About / Commitment card (matches reference layout) ---------- */
+@media (min-width: 1024px) {
+  .about-card {
+    padding: 3.5rem 3.5rem;
+  }
+}
+
+/* ---------- About Us cards ---------- */
+.about-card {
+  background-color: #f3f1ea;
+  border-radius: 20px;
+  padding: 2.5rem 3rem;
+  border: 1px solid rgba(36, 30, 26, 0.06);
+  box-shadow:
+    0 2px 4px rgba(36, 30, 26, 0.06),
+    0 8px 20px rgba(36, 30, 26, 0.1),
+    0 20px 40px rgba(30, 58, 43, 0.08);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* ---------- Order Now button ---------- */
+.order-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--cream);
+  background-color: var(--forest);
+  padding: 0.65rem 1.25rem;
+  border-radius: 999px;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease,
+    box-shadow 0.2s ease;
+}
+.order-btn:hover {
+  background-color: var(--husk);
+  box-shadow: 0 8px 18px rgba(139, 90, 43, 0.25);
+}
+.order-btn:active {
+  background-color: #6e4620; /* husk yg digelapkan */
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 3px 8px rgba(139, 90, 43, 0.2);
+}
+
+/* ---------- Eyebrow pill (label yang sengaja terlihat seperti badge/button) ---------- */
+.eyebrow-pill {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--husk);
+  background-color: #f3f1ea;
+  border: 1px solid #8b5a2b;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+}
+
+/* ---------- Product cards (shadow timbul, sama seperti misi-card) ---------- */
+.product-card {
+  background-color: var(--cream);
+  border-radius: 20px;
+  padding: 1.75rem;
+  border: 1px solid rgba(36, 30, 26, 0.06);
+  box-shadow:
+    0 2px 4px rgba(138, 138, 138, 0.06),
+    0 8px 20px rgba(36, 30, 26, 0.1),
+    0 20px 40px rgba(30, 58, 43, 0.08);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 4px 8px rgba(36, 30, 26, 0.08),
+    0 16px 32px rgba(36, 30, 26, 0.14),
+    0 32px 64px rgba(30, 58, 43, 0.16);
+  border-color: var(--leaf);
+}

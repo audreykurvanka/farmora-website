@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FARMORA | Indonesian Coconut, Copra &amp; Coconut Shell Charcoal Supplier</title>
+    <meta name="description" content="FARMORA is an Indonesian coconut products supplier — whole coconuts, copra, and coconut shell charcoal — for trading, manufacturing, and industrial needs, locally and for export." />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Tailwind (CDN, no build step) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-cream text-charcoal">
+    <!-- ============ HEADER ============ -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
+        <a href="#home" class="flex items-center gap-3">
+          <img src="images/logo.png" alt="FARMORA Logo" class="h-9 w-9" />
+          <span class="font-display font-semibold text-xl tracking-tight text-forest header-text">FARMORA</span>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-9 font-body text-sm font-medium header-text">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About Us</a>
+          <a href="#products" class="nav-link">Products</a>
+          <a href="#why" class="nav-link">Why Farmora</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <a href="#" id="btn-pesan-header" class="hidden lg:inline-flex items-center gap-2 bg-leaf hover:bg-forest text-forest hover:text-cream font-semibold text-sm px-5 py-2.5 rounded-full transition-colors duration-200 whatsapp-btn">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.47 1.29 4.93L2 22l5.29-1.38a9.85 9.85 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.13.82.83-3.06-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.26-8.24 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.83c0 4.55-3.7 8.23-8.24 8.23Zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.9 2.42 1.02 2.58c.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.11-.23-.17-.48-.29Z"
+            />
+          </svg>
+          Order Now
+        </a>
+
+        <button id="menu-toggle" class="lg:hidden header-text" aria-label="Open menu">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+        </button>
+      </div>
+
+      <!-- Mobile nav -->
+      <div id="mobile-menu" class="hidden lg:hidden bg-forest px-6 pb-6 pt-2">
+        <nav class="flex flex-col gap-4 font-body text-cream text-base">
+          <a href="#home" class="nav-link-mobile">Home</a>
+          <a href="#about" class="nav-link-mobile">About Us</a>
+          <a href="#products" class="nav-link-mobile">Products</a>
+          <a href="#why" class="nav-link-mobile">Why Farmora</a>
+          <a href="#contact" class="nav-link-mobile">Contact</a>
+          <a href="#" class="btn-whatsapp-mobile whatsapp-btn inline-flex w-fit items-center gap-2 bg-leaf text-forest font-semibold text-sm px-5 py-2.5 rounded-full mt-2">Order Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+<section id="home" class="relative min-h-[100svh] flex items-end pb-16 pt-32 overflow-hidden">
+  <div class="absolute inset-0 -z-10">
+    <img
+      src="images/hero-coconut.jpg"
+      alt="Premium Indonesian coconuts and coconut shell charcoal"
+      class="w-full h-full object-cover object-[70%_center] sm:object-center hero-parallax"
+      id="hero-img"
+    />
+    <div class="absolute inset-0 hero-gradient"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 w-full">
+    <p class="text-leaf font-body font-semibold tracking-[0.2em] text-xs uppercase mb-5 fade-up">Trusted Coconut Supplier Indonesia</p>
+    <h1 class="font-display font-semibold text-cream text-4xl sm:text-5xl lg:text-6xl leading-[1.08] max-w-3xl fade-up">From Local Farms to Global Markets, <span class="italic text-leaf">One Coconut</span> at a Time.</h1>
+    <div class="flex flex-wrap gap-4 mt-9 fade-up">
+      <a href="#" class="whatsapp-btn inline-flex items-center gap-2 bg-leaf hover:bg-cream text-forest font-semibold px-7 py-3.5 rounded-full transition-colors duration-200">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.47 1.29 4.93L2 22l5.29-1.38a9.85 9.85 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.13.82.83-3.06-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.26-8.24 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.83c0 4.55-3.7 8.23-8.24 8.23Zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.9 2.42 1.02 2.58c.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.11-.23-.17-.48-.29Z"
+          />
+        </svg>
+        Chat With Us on WhatsApp
+      </a>
+      <a href="#products" class="inline-flex items-center gap-2 border border-cream/40 hover:bg-cream/10 text-cream font-semibold px-7 py-3.5 rounded-full transition-colors duration-200"> View Products </a>
+    </div>
+  </div>
+</section>
+<!-- ============ ABOUT US ============ -->
+<section id="about" class="py-14 lg:py-20 px-6 lg:px-10">
+  <div class="max-w-7xl mx-auto">
+    <!-- Card layout, left-aligned like the reference image -->
+    <div class="about-card reveal-up">
+      <p class="eyebrow">About Us</p>
+      <h2 class="font-display font-semibold text-forest text-3xl sm:text-4xl leading-tight mt-3">A Trusted Partner for Indonesian Coconut Products</h2>
+      <p class="font-body text-charcoal/75 leading-relaxed mt-8">
+        FARMORA is a company engaged in the sourcing, processing, and distribution of Indonesian coconut products for local and international markets. We work closely with selected coconut farmers and suppliers to deliver consistent,
+        high-quality products through responsible sourcing practices.
+      </p>
+      <p class="font-body text-charcoal/75 leading-relaxed mt-4">
+        With a strong supply network and strict quality control, FARMORA is committed to becoming a trusted partner for trading, manufacturing, and industrial needs.
+      </p>
+    </div>
+
+    <!-- Vision & Mission -->
+<div class="mt-24">
+  <div class="grid lg:grid-cols-2 gap-14 items-start relative">
+    <!-- Left: Vision + Mission -->
+    <div class="reveal-up relative z-10">
+      <h2 class="font-display font-semibold text-forest text-3xl sm:text-4xl leading-tight">Vision</h2>
+      <p class="font-body leading-relaxed mt-5 text-charcoal/70 max-w-md">To become a trusted and globally competitive supplier of Indonesian coconut products.</p>
+
+      <h2 class="font-display font-semibold text-forest text-3xl sm:text-4xl leading-tight mt-14">Mission</h2>
+
+      <!-- Mission cards: 1 column on mobile, 2 columns from sm up, overlaps image only from lg up -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-6 relative lg:w-[130%]">
+        <div class="misi-card reveal-up">
+          <p class="font-body text-sm leading-relaxed text-charcoal/70">To provide high-quality coconut products with sustainable supply.</p>
+        </div>
+        <div class="misi-card reveal-up">
+          <p class="font-body text-sm leading-relaxed text-charcoal/70">To support the welfare of local farmers and business partners.</p>
+        </div>
+        <div class="misi-card reveal-up">
+          <p class="font-body text-sm leading-relaxed text-charcoal/70">To maintain product standards, timely delivery, and customer satisfaction.</p>
+        </div>
+        <div class="misi-card reveal-up">
+          <p class="font-body text-sm leading-relaxed text-charcoal/70">To develop coconut-based products professionally and responsibly.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: image, only shown at lg and up, sits behind the mission cards -->
+    <div class="hidden lg:block reveal-up self-center">
+      <img src="images/about-coconut-farm.jpg" alt="Indonesian coconut farm" class="w-[900px] max-w-full h-[500px] object-cover rounded-2xl img-parallax" />
+    </div>
+  </div>
+</div>
+    </div>
+
+    <!-- Signature element: supply journey -->
+    <div class="mt-24">
+      <p class="eyebrow text-center reveal-up">Our Product Journey</p>
+      <h3 class="font-display font-semibold text-forest text-2xl sm:text-3xl text-center mt-3 mb-14 reveal-up">From the Farm to Your Hands</h3>
+
+      <div class="grid sm:grid-cols-4 gap-8 relative">
+        <div class="hidden sm:block absolute top-7 left-[12.5%] right-[12.5%] h-px bg-husk/30 journey-line"></div>
+
+        <div class="relative text-center reveal-up">
+          <div class="journey-dot">01</div>
+          <h4 class="font-display font-semibold text-forest mt-5">Local Farmers</h4>
+          <p class="font-body text-sm text-charcoal/65 mt-2 leading-relaxed">Coconuts are harvested from selected farmer and supplier networks across Indonesia.</p>
+        </div>
+        <div class="relative text-center reveal-up">
+          <div class="journey-dot">02</div>
+          <h4 class="font-display font-semibold text-forest mt-5">Sorting &amp; Quality Control</h4>
+          <p class="font-body text-sm text-charcoal/65 mt-2 leading-relaxed">Every batch is selected and passes strict quality control before processing.</p>
+        </div>
+        <div class="relative text-center reveal-up">
+          <div class="journey-dot">03</div>
+          <h4 class="font-display font-semibold text-forest mt-5">Processed &amp; Packed</h4>
+          <p class="font-body text-sm text-charcoal/65 mt-2 leading-relaxed">Turned into whole coconuts, copra, or shell charcoal to customer specification.</p>
+        </div>
+        <div class="relative text-center reveal-up">
+          <div class="journey-dot">04</div>
+          <h4 class="font-display font-semibold text-forest mt-5">Delivered to Customers</h4>
+          <p class="font-body text-sm text-charcoal/65 mt-2 leading-relaxed">Distributed professionally and on time, for local and export markets alike.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br><br>
+
+<!-- ============ PRODUCTS ============ -->
+<section id="products" class="py-16 lg:py-20 px-6 lg:px-10 bg-forest">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-10 reveal-up">
+      <div>
+        <p class="eyebrow-pill">Our Products</p>
+        <h2 class="font-display font-semibold text-cream text-3xl sm:text-4xl mt-3">Three Core Products We Supply</h2>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 items-stretch">
+      <!-- Product 1: Whole Coconuts -->
+      <article class="product-card reveal-up flex flex-col h-full gap-4">
+        <img src="images/product-whole-coconut.jpg" alt="FARMORA whole coconuts" class="w-full h-56 object-cover rounded-xl mb-3" />
+        <h3 class="font-display font-semibold text-forest text-xl">Whole Coconuts</h3>
+        <p class="font-body text-sm text-charcoal/65 leading-relaxed">Fresh whole coconuts sourced from selected Indonesian plantations, available in various sizes and maturity levels based on customer requirements.</p>
+        <p class="font-body text-xs text-husk font-medium">For: fresh consumption, food &amp; beverage production, coconut milk, coconut oil processing.</p>
+        <a href="#" data-product="Whole Coconuts" class="btn-pesan-produk whatsapp-btn order-btn mt-auto self-start">
+          Order Now
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+        </a>
+      </article>
+
+      <!-- Product 2: Copra -->
+      <article class="product-card reveal-up flex flex-col h-full gap-4">
+        <img src="images/product-copra.jpg" alt="FARMORA copra" class="w-full h-56 object-cover rounded-xl mb-3" />
+        <h3 class="font-display font-semibold text-forest text-xl">Copra</h3>
+        <p class="font-body text-sm text-charcoal/65 leading-relaxed">Copra made from mature coconut meat and dried under controlled conditions to maintain product quality and moisture content.</p>
+        <p class="font-body text-xs text-husk font-medium">For: coconut oil production, animal feed, oleochemical products, related industries.</p>
+        <a href="#" data-product="Copra" class="btn-pesan-produk whatsapp-btn order-btn mt-auto self-start">
+          Order Now
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+        </a>
+      </article>
+
+      <!-- Product 3: Coconut Shell Charcoal -->
+      <article class="product-card reveal-up flex flex-col h-full gap-4">
+        <img src="images/product-charcoal.jpg" alt="FARMORA coconut shell charcoal" class="w-full h-56 object-cover rounded-xl mb-3" />
+        <h3 class="font-display font-semibold text-forest text-xl">Coconut Shell Charcoal</h3>
+        <p class="font-body text-sm text-charcoal/65 leading-relaxed">High-quality charcoal made from coconut shells, offering high heat output, low smoke, and long burning duration.</p>
+        <p class="font-body text-xs text-husk font-medium">For: household use, restaurants, BBQ, shisha, charcoal briquette production.</p>
+        <a href="#" data-product="Coconut Shell Charcoal" class="btn-pesan-produk whatsapp-btn order-btn mt-auto self-start">
+          Order Now
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<br><br><br>
+    <!-- ============ WHY FARMORA ============ -->
+    <section id="why" class="py-0.5 lg:py-2 px-6 lg:px-10">
+      <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-center">
+        <div class="reveal-up">
+          <p class="eyebrow">Why Choose Us</p>
+          <h2 class="font-display font-semibold text-forest text-3xl sm:text-4xl leading-tight mt-3">A Quality Standard You Can Trust</h2>
+
+          <div class="mt-10 flex flex-col gap-6">
+            <div class="flex items-start gap-4">
+              <div class="why-icon">01</div>
+              <div>
+                <h4 class="font-display font-semibold text-forest">Direct Supply from Farmers</h4>
+                <p class="font-body text-sm text-charcoal/65 mt-1 leading-relaxed">Sourced directly from selected local farmer and supplier networks.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="why-icon">02</div>
+              <div>
+                <h4 class="font-display font-semibold text-forest">Selection &amp; Quality Control</h4>
+                <p class="font-body text-sm text-charcoal/65 mt-1 leading-relaxed">Every product goes through careful selection and strict quality checks.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="why-icon">03</div>
+              <div>
+                <h4 class="font-display font-semibold text-forest">Flexible Supply Capacity</h4>
+                <p class="font-body text-sm text-charcoal/65 mt-1 leading-relaxed">Capacity can be adjusted to match customer needs and demand.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="why-icon">04</div>
+              <div>
+                <h4 class="font-display font-semibold text-forest">Customizable Specs &amp; Packaging</h4>
+                <p class="font-body text-sm text-charcoal/65 mt-1 leading-relaxed">Product specifications and packaging can be tailored to your request.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="why-icon">05</div>
+              <div>
+                <h4 class="font-display font-semibold text-forest">Professional &amp; Reliable Service</h4>
+                <p class="font-body text-sm text-charcoal/65 mt-1 leading-relaxed">Dependable delivery backed by professional, responsive service.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="inline-flex items-center gap-2 bg-forest hover:bg-husk text-cream font-semibold px-7 py-3.5 rounded-full transition-colors duration-200 mt-10"> Contact Us </a>
+        </div>
+
+        <img src="images/why-us.jpg" alt="Quality FARMORA coconut products" class="rounded-2xl w-full h-[420px] sm:h-[520px] object-cover reveal-up img-parallax" />
+      </div>
+    </section>
+
+    <!-- ============ OUR COMMITMENT ============ -->
+<section class="py-14 lg:py-20 px-6 lg:px-10">
+  <div class="max-w-7xl mx-auto">
+    <div class="about-card reveal-up">
+      <p class="eyebrow">Our Commitment</p>
+      <h2 class="font-display font-semibold text-forest text-3xl sm:text-4xl leading-tight mt-3">Built on Trust, Quality, and Fair Partnership</h2>
+      <p class="font-body text-charcoal/70 mt-5 leading-relaxed">
+        FARMORA believes that Indonesian coconuts hold strong potential in the global market. We are committed to maintaining product quality, building fair partnerships with farmers, and delivering dependable products and services to
+        every customer.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <!-- ============ FOOTER / CONTACT ============ -->
+    <footer id="contact" class="bg-forest pt-20 pb-8 px-6 lg:px-10">
+      <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div>
+          <div class="flex items-center gap-3">
+            <img src="images/logo.png" alt="FARMORA Logo" class="h-8 w-8" />
+            <span class="font-display font-semibold text-lg text-cream">FARMORA</span>
+          </div>
+          <p class="font-body text-white text-sm mt-4 leading-relaxed">Indonesian coconut products (whole coconuts, copra, and coconut shell charcoal) supplier for local and export needs.</p>
+        </div>
+
+        <div>
+          <h5 class="font-body font-semibold text-cream text-sm uppercase tracking-wide">Navigation</h5>
+          <ul class="font-body text-white text-sm mt-4 space-y-2">
+            <li><a href="#home" class="hover:text-leaf">Home</a></li>
+            <li><a href="#about" class="hover:text-leaf">About Us</a></li>
+            <li><a href="#products" class="hover:text-leaf">Products</a></li>
+            <li><a href="#why" class="hover:text-leaf">Why Farmora</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="font-body font-semibold text-cream text-sm uppercase tracking-wide">Products</h5>
+          <ul class="font-body text-white text-sm mt-4 space-y-2">
+            <li>Whole Coconuts</li>
+            <li>Copra</li>
+            <li>Coconut Shell Charcoal</li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="font-body font-semibold text-cream text-sm uppercase tracking-wide">Contact</h5>
+          <ul class="font-body text-white text-sm mt-4 space-y-2">
+            <li>Ruko Grand Nusa Indah Blok A/9,<br />Gandoang, Cileungsi, Kab. Bogor 16820</li>
+            <li>WhatsApp: 0812-8233-3856</li>
+            <li>Email: <a href="mailto:info@farmora.com" class="text-cream hover:text-leaf">info@farmora.com</a></li>
+          </ul>
+          <div class="flex gap-3 mt-5">
+            <a href="#" class="whatsapp-btn social-icon" aria-label="WhatsApp">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.47 1.29 4.93L2 22l5.29-1.38a9.85 9.85 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.13.82.83-3.06-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.26-8.24 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.83c0 4.55-3.7 8.23-8.24 8.23Zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.9 2.42 1.02 2.58c.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.11-.23-.17-.48-.29Z"
+                />
+              </svg>
+            </a>
+            <a href="mailto:info@farmora.com" class="social-icon" aria-label="Email">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.25 6.75c0-.83.67-1.5 1.5-1.5h16.5c.83 0 1.5.67 1.5 1.5v10.5c0 .83-.67 1.5-1.5 1.5H3.75c-.83 0-1.5-.67-1.5-1.5V6.75Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 7 8.29 6.09a2.25 2.25 0 0 0 2.67 0L22.25 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto border-t border-cream/15 mt-14 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="font-body text-white text-xs">© 2026 FARMORA. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Floating WA button (mobile) -->
+    <a href="#" class="whatsapp-btn fixed bottom-5 right-5 z-50 sm:hidden bg-leaf text-forest rounded-full p-4 shadow-lg">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path
+          d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.47 1.29 4.93L2 22l5.29-1.38a9.85 9.85 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.13.82.83-3.06-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.26-8.24 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.83c0 4.55-3.7 8.23-8.24 8.23Z"
+        />
+      </svg>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
